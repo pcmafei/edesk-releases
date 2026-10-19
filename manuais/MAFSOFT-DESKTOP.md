@@ -1,6 +1,6 @@
 # Manual de Instalação MAFSOFT - DESKTOP
 
-**Versão 1.1** · 19/10/2026
+**Versão 1.2** · 19/10/2026
 
 ## Objetivo
 
@@ -101,7 +101,7 @@ Para desligar a atualização automática num computador específico (ex.: homol
 | Log do Monitor mostra "consumo indevido" | Outro programa ou outro Monitor consultando o mesmo CNPJ | Remover o outro programa de download; o Monitor retoma sozinho em 1 hora |
 | Erro de certificado | Certificado vencido, senha errada ou token desconectado | Reconfigurar o certificado nas Configurações |
 
-Suporte MAFSOFT: WhatsApp/telefone (43) 99130-0342.
+Suporte MAFSOFT: WhatsApp/telefone (43) 98455-0476.
 
 ## Checklist do representante
 
@@ -124,3 +124,4 @@ Marque cada item ao final da instalação no cliente:
 | --- | --- | --- |
 | 1.0 | 14/10/2026 | Primeira versão publicada |
 | 1.1 | 19/10/2026 | Monitor: ritmo de consulta (espera de 1 h / 15 min) e status "aguardando SEFAZ" como comportamento normal |
+| 1.2 | 19/10/2026 | Telefone/WhatsApp do suporte atualizado para (43) 98455-0476 |
