@@ -1,6 +1,6 @@
 # Manual de Instalação ARGUSX - DESKTOP
 
-**Versão 1.0** · 14/10/2026
+**Versão 1.1** · 19/10/2026
 
 ## Objetivo
 
@@ -58,6 +58,7 @@ O Monitor baixa da SEFAZ todos os documentos destinados ao CNPJ e envia para a n
 - **Deixe o Monitor aberto o tempo todo.** Coloque o atalho do ARGUSX\_MONITOR na pasta Inicializar do Windows (Win+R → shell:startup) para abrir sozinho ao ligar.
 - **Um Monitor por CNPJ, em um só computador.** Dois Monitores consultando o mesmo CNPJ fazem a SEFAZ bloquear as consultas por 1 hora. O sistema impede abrir dois na mesma pasta, mas não em computadores diferentes.
 - **Não use outro programa de download de notas em paralelo** (FSist, outros sistemas) no mesmo CNPJ, pelo mesmo motivo.
+- **Ritmo de consulta:** quando não há nota nova, o Monitor espera 1 hora para consultar de novo a NF-e, o CT-e e o MDF-e (regra da SEFAZ) e 15 minutos para a NFS-e. Enquanto espera, o status mostra "..." ou "aguardando SEFAZ". Isso é normal e evita bloqueio por consumo indevido.
 - **Se o Monitor ficar parado,** o suporte consegue ver pela nuvem há quanto tempo ele está sem trabalhar. Ao reabrir, ele recupera sozinho o que ficou para trás (até 90 dias).
 
 ## Atualização automática
@@ -95,7 +96,8 @@ Para desligar a atualização automática num computador específico (ex.: homol
 | Atualização adiada sozinha | Algum usuário clicou em Adiar num dos programas abertos | Normal: o sistema tenta de novo em 30 minutos |
 | Versão voltou para a anterior | A versão nova não abriu em 2 minutos e o sistema desfez a troca | Avisar o suporte com o arquivo update.log |
 | Notas de compra não aparecem no ARGUSX | Monitor fechado ou computador desligado | Abrir o Monitor; ele recupera o atraso sozinho |
-| Monitor mostra "aguardando SEFAZ" | Consumo indevido: outro programa consultou o mesmo CNPJ | Aguardar 1 hora e remover o outro programa de download |
+| Monitor mostra "aguardando SEFAZ" ou "..." | Normal (v2.88+): sem nota nova, espera 1 h (NF-e, CT-e, MDF-e) ou 15 min (NFS-e) | Nada a fazer; notas novas chegam na próxima consulta |
+| Log do Monitor mostra "consumo indevido" | Outro programa ou outro Monitor consultando o mesmo CNPJ | Remover o outro programa de download; o Monitor retoma sozinho em 1 hora |
 | Erro de certificado | Certificado vencido, senha errada ou token desconectado | Reconfigurar o certificado nas Configurações |
 
 ## Checklist do representante
@@ -118,3 +120,4 @@ Marque cada item ao final da instalação no cliente:
 | Versão | Data | Alteração |
 | --- | --- | --- |
 | 1.0 | 14/10/2026 | Primeira versão publicada |
+| 1.1 | 19/10/2026 | Monitor: ritmo de consulta (espera de 1 h / 15 min) e status "aguardando SEFAZ" como comportamento normal |
